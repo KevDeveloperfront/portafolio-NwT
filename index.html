@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de programador Web" />
+    <meta
+      name="keywords"
+      content="Desarrollador Web, Frontend Developer, Portafolio, HTML5, CSS3, Tailwind CSS v4, JavaScript, Git, GitHub, Git Flow, Vite, Web Design"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Enlance - link de Favicon -->
+    <link rel="shortcut icon" href="./src/assets/ico/LOGO 1.ico" type="image/x-icon">
+    <title>Kevin | Frontend Developer</title>
+    <!-- script de fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/075f4952e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans min-h-screen">
+    <!-- animacion de Nodos -->
+     <div id="tsparticles" class="fixed inset-0 -z-10"></div>
+    <!-- Area del Navbar - barra de navegación: logo tipo icono con redirección a home(index) about (sobre mi) proyectos(galeria de proyectos realizados) -->
+    <header class="w-full bg-black/50 backdrop-blur-md sticky top-0 z-50">
+      <div class="flex items-center justify-between p-1 shadow-lg">
+        <div class="w-10">
+          <a href="./index.html">
+            <img
+              src="./src/assets/img/LOGO 1.png"
+              alt="Logo de Landing | Portafolio Kev Developer"
+            />
+          </a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-2xl p-2 focus:outline-none">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <nav
+          id="menu"
+          class="hidden absolute top-full left-0 w-full bg-black/90 backdrop-blur-lg border-b border-white/10 md:static md:w-auto md:bg-transparent md:border-none md:flex"
+        >
+          <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 items-center">
+            <li>
+              <a href="./index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-cyan-400 transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-cyan-400 transition-colors"
+                >Porjects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-cyan-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Sección donde pondremos la información principal, lo que el estandar llama hero, nombre del desarrollador, botones, uno que descarga el cv o que mueve la pagina hacia la galeria -->
+    <main
+      class="pt-24 min-h-screen flex flex-col items-center justify-center px-6 text-center"
+    >
+      <div
+        data-aos="zoom-in"
+        class="w-32 h-32 bg-cyan-500 rounded-full mb-8 overflow-hidden border-4 border-cyan-400/30"
+      >
+        <img
+          src="./src/assets/img/hero/imgHero.jpeg"
+          alt="Kevin"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <h1
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="text-4xl md:text-6xl font-bold tracking-tight"
+      >
+        Hola, soy <span class="text-cyan-400">Kevin</span>
+      </h1>
+
+      <p
+        data-aos="fade-up"
+        data-aos-delay="400"
+        class="mt-4 text-gray-400 max-w-sm md:max-w-xl text-lg"
+      >
+        Desarrollador Frontend apasionado por crear interfaces modernas, limpias
+        y funcionales.
+      </p>
+
+      <div
+        data-aos="fade-up"
+        data-aos-delay="600"
+        class="mt-10 flex flex-col sm:flex-row gap-4 w-full max-w-xs sm:max-w-none justify-center"
+      >
+        <a
+          href="#projects"
+          class="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-cyan-400 transition-all"
+        >
+          Ver Proyectos
+        </a>
+        <a
+          href="./src/assets/doc/cv kevin 2025.pdf"
+          download
+          class="px-8 py-3 border border-white/20 rounded-full hover:bg-white/10 transition-all"
+        >
+          Descargar CV
+        </a>
+      </div>
+    </main>
+    <!-- pequeña sección donde se partira en dos, pondremos una foto en circulo del lado izquierdo y del lado derecho un pequeño texto con datos varios sobre mi -->
+    <section id="about" class="relative py-20 px-6 overflow-hidden">
+      <div class="absolute inset-0 bg-slate-900/40 backdrop-blur-md border-y border-white/10"></div>
+
+      <div class="container mx-auto max-w-6xl relative z-10">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+      
+          <div data-aos="fade-right" class="w-full md:w-1/2">
+            <div class="relative group">
+              <div class="absolute -top-6 -left-6 w-full h-full border-2 border-cyan-500/20 rounded-3xl hidden md:block transition-all group-hover:-top-4 group-hover:-left-4"></div>
+              
+              <img src="./src/assets/img/about/imgAbout2.jpeg" 
+                   alt="Kevin Pérez" 
+                   class="relative z-10 rounded-3xl border border-white/10 shadow-2xl grayscale hover:grayscale-0 transition duration-700 w-full h-[500px] object-cover object-left">
+            </div>
+          </div>
+
+          <div data-aos="fade-left" class="w-full md:w-1/2 space-y-6">
+            <div class="flex items-center gap-2">
+              <div class="w-10 h-[2px] bg-cyan-400 text-white"></div>
+              <span class="text-cyan-400 font-bold tracking-[0.2em] uppercase text-sm">Sobre mí</span>
+            </div>
+        
+            <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight">
+              Un apasionado por el código y el <span class="text-cyan-400">diseño funcional</span>
+            </h2>
+        
+            <p class="text-gray-300 text-lg leading-relaxed">
+              ¡Hola! Soy Kevin, un desarrollador autodidacta que disfruta transformar problemas complejos en interfaces intuitivas. Mi viaje comenzó con HTML y CSS, y rápidamente evolucionó hacia el mundo del desarrollo web, donde descubrí mi pasión por crear experiencias digitales memorables.
+            </p>
+
+            <div class="grid grid-cols-2 gap-6 pt-4">
+              <div class="flex items-center gap-3 group">
+                <svg class="w-8 h-8 transition-transform group-hover:scale-110">
+                  <use xlink:href="./src/assets/svg/sprite.svg#javascript"></use>
+                </svg>
+                <span class="text-gray-300 font-medium group-hover:text-white transition-colors">JavaScript</span>
+              </div>
+
+              <div class="flex items-center gap-3 group">
+                <svg class="w-8 h-8 transition-transform group-hover:scale-110">
+                  <use xlink:href="./src/assets/svg/sprite.svg#html"></use>
+                </svg>
+                <span class="text-gray-300 font-medium group-hover:text-white transition-colors">HTML5 / CSS3</span>
+              </div>
+
+              <div class="flex items-center gap-3 group">
+                <svg class="w-8 h-8 transition-transform group-hover:scale-110">
+                  <use xlink:href="./src/assets/svg/sprite.svg#github"></use>
+                </svg>
+                <span class="text-gray-300 font-medium group-hover:text-white transition-colors">Git / GitHub</span>
+              </div>
+
+              <div class="flex items-center gap-3 group">
+                <svg class="w-8 h-8 transition-transform group-hover:scale-110">
+                  <use xlink:href="./src/assets/svg/sprite.svg#tailwind"></use>
+                </svg>
+                <span class="text-gray-300 font-medium group-hover:text-white transition-colors">Tailwind CSS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>    <!-- Sección donde estara el grip con la galeria de proyectos, en teoria deberia ser dinamico para que sea 2 columnas 3 filas -->
+    <section id="projects" class="galery py-20 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500/50">
+          <img src="./src/assets/img/Grid/proyecto1.png" alt="" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-white font-bold text-xl">Recursos para Desarrolladores Frontend</h3>
+            <p class="text-gray-400 text-sm mt-2">Este proyecto es una galería de recursos gratuitos para desarrolladores frontend, creado como parte de mi aprendizaje en desarrollo web. Mi objetivo es compartir herramientas y tutoriales útiles mientras practico HTML, CSS y JavaScript.</p>
+            <div class="flex gap-2 mt-4">
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">HTML</span>
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">CSS</span>
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">JS</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500/50">
+          <img src="./src/assets/img/Grid/proyecto2.png" alt="" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-white font-bold text-xl">¡Hola Mundo! 🚀 El Despegue de tu Presencia Digital</h3>
+            <p class="text-gray-400 text-sm mt-2">Landing page fícticia. En un mundo donde el 90% de los consumidores investigan en línea antes de comprar, tu empresa necesita una web que destaque, convierta y crezca.</p>
+            <div class="flex gap-2 mt-4">
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">HTML</span>
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-500/50">
+          <img src="./src/assets/img/Grid/proyecto4.png" alt="" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-white font-bold text-xl">Curriculum Vitae</h3>
+            <p class="text-gray-400 text-sm mt-2">Plantilla para síntesis curricular, modelo con información ficticia</p>
+            <div class="flex gap-2 mt-4">
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">HTML</span>
+              <span class="text-blue-400 text-xs font-bold px-2 py-1 bg-blue-900/30 rounded transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-default">CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section de formulario simple para contacto -->
+     <section id="contact" class="py-20 px-6 bg-slate-950">
+      <div class="max-w-xl mx-auto text-center">
+        <h3 class="text-4xl font-bold text-white mb-4">Hablamos?</h3>
+        <p class="text-gray-400 mb-10">¿Tienes alguna pregunta o te interesa una colaboración? ¡Envíame un mensaje!</p>
+        <form action="#" class="space-y-6 text-left">
+          <div>
+            <label for="name" class="block text-gray-400 text-sm font-semibold mb-2">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre es?" class="w-full bg-slate-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-300">
+          </div>
+          <div>
+            <label for="email" class="block text-gray-400 text-sm font-semibold mb-2">Correo</label>
+            <input type="email" id="email" placeholder="Tu correo es?" class="w-full bg-slate-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-300">
+          </div>
+          <div>
+            <label for="message" class="block text-gray-400 text-sm font-semibold mb-2">Mensaje</label>
+            <textarea id="message" placeholder="Tu mensaje es?" class="w-full bg-slate-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg">Enviar</button>
+        </form>
+      </div>
+     </section>
+    <!-- Pie de pagina, con botones hacia el github - linkedin y formulario sencillo, nombre, correo, textarea para escribir el motivo -->
+    <footer class="py-10 bg-slate-950 border border-gray-800 text-center">
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="#" target="_blank" class="text-gray-400 hover:text-white transition-all transform hover:scale-110">
+          <svg class="w-8 h-8">
+            <use xlink:href="./src/assets/svg/sprite.svg#github"></use>
+          </svg>
+        </a>
+        <a href="#" target="_blank" class="text-gray-400 hover:text-blue-700 transition-all transform hover:scale-110">
+          <svg class="w-8 h-8">
+            <use xlink:href="./src/assets/svg/sprite.svg#linkedin"></use>
+          </svg>
+        </a>
+      </div>
+    <p class="text-gray-500 text-sm">© 2026 Kevin Pérez. Developed with passion & code.</p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "portafolio-nwt",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@tsparticles/confetti": "^3.9.1",
+    "@tsparticles/preset-links": "^3.2.0",
+    "aos": "^2.3.4",
+    "tailwindcss": "^4.1.18"
+  }
+}
