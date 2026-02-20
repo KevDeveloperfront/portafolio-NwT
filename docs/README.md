@@ -1,4 +1,4 @@
-# 🚀 Mi Portafolio Profesional | Kevin Pérez
+# 🚀 Mi Portafolio | Kevin Pérez
 
 ¡Hola! Bienvenida/o a mi rincón de desarrollo. Soy un profesional del área IT con sólida trayectoria en soporte técnico avanzado y coordinación de infraestructura, ahora canalizando toda esa experiencia en el **Desarrollo Frontend**.
 
