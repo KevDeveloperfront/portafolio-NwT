@@ -22,6 +22,7 @@ Actualmente, mi flujo de trabajo se centra en crear interfaces modernas, rápida
 ## 📂 Estructura del Proyecto
 
 He organizado el código siguiendo las mejores prácticas para mantener la escalabilidad:
+
 ├── public/          # Assets estáticos (Vite)
 ├── src/
 │   ├── assets/      # Imágenes, SVGs y PDF del CV
