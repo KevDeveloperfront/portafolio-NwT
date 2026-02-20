@@ -19,19 +19,6 @@ Actualmente, mi flujo de trabajo se centra en crear interfaces modernas, rápida
 
 ---
 
-## 📂 Estructura del Proyecto
-
-He organizado el código siguiendo las mejores prácticas para mantener la escalabilidad:
-
-├── public/          # Assets estáticos (Vite)
-├── src/
-│   ├── assets/      # Imágenes, SVGs y PDF del CV
-│   ├── js/          # Lógica modular (Menú, animaciones, partículas)
-│   └── css/         # Estilos globales y configuraciones
-├── index.html       # Punto de entrada principal
-└── .gitignore       # Archivos excluidos del control de versiones
----
-
 ## 📈 Hoja de Ruta (Roadmap)
 
 Este portafolio es un proyecto en constante expansión. Próximamente integraré:
